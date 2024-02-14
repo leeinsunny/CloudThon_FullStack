@@ -1,0 +1,42 @@
+.container{
+    border: 6px solid lightcoral;
+    display: flex;
+    height: 500px;
+    align-items: center;
+}
+
+.flex-item{
+    color:black;
+    font-size: 2rem;
+    padding: 1rem;
+    text-align: center;
+}
+
+.item-1{
+    background-color: lightpink;
+    padding-bottom: 3rem;
+}
+
+.item-2{
+    background-color: lightsalmon;
+    padding-top: 7rem;
+}
+
+.item-3{
+    background-color: yellow;
+    padding-left: 5rem;
+}
+
+.item-4{
+    background-color: lightgreen;
+    padding-bottom: 8rem;
+}
+
+.item-5{
+    background-color: lightskyblue;
+    padding-top: 12rem;
+}
+
+.item-6{
+    background-color: rgb(244, 160, 255);
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <link rel="stylesheet" href="styless.css">
+</head>
+<body>
+    <h1> < justify content = main축 기준 정렬 > </h1>
+    <h2>
+        <pre>
+    * justify content는 주축을 따라 정렬을 정의한다
+      한 줄의 모든 플렉스 항목이 유연하지 않거나 유연하지만 최대 크기에 도달한 경우
+      남은 여유 공간을 분산하는데 도움이 된다. 
+    * 또한 items이 줄을 넘을 때 항목의 정렬을 제어한다
+    </pre>
+
+    <h3>
+    <ol>
+        <li>flex-start : 왼쪽 정렬</li>
+        <li>flex-end : 오른쪽 정렬</li>
+        <li>center :  가운데 정렬</li>
+        <li>space-between : 첫 번째 요소와 마지막 요소는 부모 요소의 가장자리에 붙어있고, 
+            나머지 요소들 사이에는 동일한 여백이 배치된다</li>
+        <li>space-around : 각 요소의 양 옆에 동일한 여백을 배치한다. 여백은 인접 요소들 사이에 공유된다</li>
+        <li>space-evenly : 모든 요소들 사이, 그리고 첫 번째 요소와 마지막 요소와 부모 요소의 가장자리 사이에 동일한 여백을 배치한다</li>
+    </ol>
+    </h3>
+
+    <div class="container">
+        <div class="flex-item item-1">item1</div>
+        <div class="flex-item item-2">item2</div>
+        <div class="flex-item item-3">item3</div>
+    </div>
+    
+    <h1> < align-items = cross축 기준 정렬 (뒤에 나옴) > </h1>
+</body>
+</html>
