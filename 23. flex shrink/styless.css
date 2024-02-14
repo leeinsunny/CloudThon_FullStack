@@ -1,0 +1,41 @@
+.container{
+    border: 6px solid lightcoral;
+    display: flex;
+   width: 400px;
+
+}
+
+.flex-item{
+    color:black;
+   width: 120px;
+   flex-shrink: 0;
+  
+}
+
+.item-1{
+    background-color: lightpink;
+   
+}
+
+.item-2{
+    background-color: lightsalmon;
+  flex-shrink: 1;
+}
+
+.item-3{
+    background-color: lightyellow;
+  
+}
+
+.item-4{
+    background-color: lightgreen;
+}
+
+.item-5{
+    background-color: lightskyblue;
+    
+}
+
+.item-6{
+    background-color: rgb(244, 160, 255);
+}

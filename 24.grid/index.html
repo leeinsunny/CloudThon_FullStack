@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+        .grid-container{
+            margin-top: 3rem;
+            display: grid;
+            background-color: lightpink;
+            grid-template-columns: auto auto auto;
+            padding: 10px;
+        }
+
+        .item1{
+            grid-column-start: 1;
+            grid-column-end: 3;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1> < grid > </h1>
+    
+    <div style="display: grid; grid-template-columns: 100px 100px;">
+        <div style="background-color: lightblue;">div1</div>
+        <div style="background-color: lightcoral;">div2</div>        
+    </div>
+
+    <div style="margin-top: 30px; display: grid; grid-template-columns: 100px 100px 200px;">
+        <div style="background-color: lightblue;">div1</div>
+        <div style="background-color: lightcoral;">div2</div> 
+        <div style="background-color: lightgreen;">div3</div>        
+    </div>       
+    
+    <div class="grid-container">
+        <div class="item1">1</div>
+        <div class="item1">2</div>
+        <div class="item1">3</div>
+        <div class="item1">4</div>
+        <div class="item1">5</div>
+        <div class="item1">6</div>
+        <div class="item1">7</div>
+        <div class="item1">8</div>
+    </div>
+
+    
+    
+</html>

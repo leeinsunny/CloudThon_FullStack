@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+        .parent p:first-of-type{
+            color: aqua;
+        }
+        .container{
+            background-color: aquamarine;
+            padding: 10px;
+            margin-bottom: 30px;
+        }
+        .container:hover{
+            background-color: red;
+        }
+        .focus-input:focus{
+            background-color: pink;
+        }
+        .container-two>div{
+            margin-top: 30px;
+            background-color: yellow;
+            width: 100px;
+            height: 100px;
+            float: left;
+        }
+        .container-two>div:nth-child(2n+1){
+            background-color: lightskyblue;
+        }
+
+        .container-two>div:last-child{
+            width: 300px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class = "container container-box">
+        Mouse Hover
+    </div>
+
+    <input class="focus-input" type="text">
+
+    <div class="container-two">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+
+    <div class="parent">
+        <span>A</span>
+        <p>B</p>
+        <P>C</P>
+    </div>
+</body>
+</html>
