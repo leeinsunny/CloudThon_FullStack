@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            container-type: inline-size;
+            container-name: item-style;
+            border: 3px solid gray;
+            width: 200px;
+            height: 200px;
+            display: grid;
+        }
+
+        .item{
+            width: 100px;
+            height: 100px;
+            background-color: lightpink;
+        }
+
+        @container item-style(max-width: 200px){
+        .item{
+            background-color: lightyellow;
+        }
+        }
+    </style>
+</head>
+<body>
+    <h1>media : view port를 기준으로 스타일링한다</h1>
+    <h1>container : view port가 아니라 container를 기준으로 스타일링한다</h1>
+
+    <input
+        type="range"
+        value="200"
+        id="width"
+        name="width"
+        min="200"
+        max="300"
+        oninput=""
+    />
+    <br/>
+
+    <div class="container">
+        <div class="item"></div>
+    </div>
+
+    <script>
+        const containerEl = document.querySelector(".container")
+            function handleInput(e){
+                console.log(e.target.value);
+                containerEl.style.width ='${e.target.value}px' ;
+            }
+    </script>
+
+</body>
+</html>
