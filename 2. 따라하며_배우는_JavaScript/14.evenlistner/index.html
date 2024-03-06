@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+   
+</head>
+
+<body>
+    <!-- <h1>Event Listener</h1>
+    <pre> 마우스를 이용해서 버튼을 클릭할 때는 클릭 이벤트가 발생한다
+        이렇게 이벤트가 발생했을 때 어떠한 액션을 위한 함수를 호출하는데,
+        그 함수가 바로 <mark>이벤트 리스너</mark>이다
+    </pre>
+
+    <h1>addEventListener</h1>
+    <pre> 어떠한 이벤트가 발생했을 때 이벤트 리스너를 호출하기 위해서는
+        이벤트 리스너를 해당 객체나 요소에 등록해줘야한다
+    </pre> -->
+
+    <div id="body-container" class="container mt-5">
+        <a>Hi</a>
+        <p id="text">Hello</p>
+
+        <button id="btn2" class="btn2 btn3 btn4">버튼2</button>
+        <button onclick="alert('버튼이 클릭됐습니다')"   class="btn">Button</button>
+        <form id="form-id" class="form-container" action="/action_page.php">
+            <div id="form-first-div" class="mb-3 mt-3">
+                <label for="email" class="form-label">Email:</label>
+                <input type="email" class="form-control" id="email" placeholder="Enter email address" name="email">
+            </div>
+            <div class="mb-3">
+                <label for="pwd" class="form-label">Password:</label>
+                <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd">
+            </div>
+            <div class="form-check mb-3">
+                <label class="for-check-label">
+                    <input class="form-check-input" type="checkbox" name="remember">Remember me
+                </label>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form> 
+    </div>
+
+    <script src="/2. 따라하며_배우는_JavaScript/14.evenlistner/script.js"></script>
+</body>
+</html>

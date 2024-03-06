@@ -24,14 +24,18 @@ exportBtn.onclick = function(e){
     let csv = ""
     for(let i=0; i<spreadsheet.length; i++){
         if(i===0)continue;
+        //근데 csv뽑아보면 맨 위에가 한 칸 띄워져있을거임 
+        //그게 밑에서 header필터링해서 그런것임
         csv +=
             spreadsheet[i]
                 .filter((item)=>!item.isHeader)
+                //위에 부분은 데이터를 넣을 때 header부분을 필터링하는 부분이다.
                 .map((item)=>item.data)
                 .join(',')+"\r\n"
     }
     const csvObj = new Blob([csv]);
     const csvUrl = URL.createObjectURL(csvObj);
+    //위에가 접근을 위한 url을 만드는 부분임
     console.log("csv",csvUrl);
 
     const a = document.createElement("a");
