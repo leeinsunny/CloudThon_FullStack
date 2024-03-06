@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Event Delegation 이벤트 위임</h1>
+    <h5>앞서 배운 이벤트 버블링과 캡처링을 통해서 이벤트 위임을 이해할 수 있다
+        이 이벤트 위임은 '하위 요소의 이벤트를 상위 요소에 위임하는 것이다'
+        즉, 하위요소의 이벤트를 상위에서 제어한다
+    </h5>
+
+    <div id="buttons">
+        <button class="buttonClass">Click me</button>
+        <button class="buttonClass">Click me</button>
+    </div>
+    <script>
+        // const buttons = document.getElementsByClassName("buttonClass");
+
+        // for(const button of buttons){
+        //     button.addEventListener("click", ()=> alert('clicked'));
+        // }
+
+        const buttonList = document.querySelector('#buttons');
+        buttons.addEventListener("click",()=>alert("clicked"));
+
+        const button = document.createElement('button');
+        button.setAttribute('class','buttonClass');
+        button.innerText = 'Click Me';
+        buttonList.appendChild(button);
+    </script>
+
+
+</body>
+</html>
